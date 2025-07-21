@@ -7,17 +7,3 @@ services:
     dockerComposeFilePath: docker-compose.yml   # ✅ This tells Render to use docker-compose
     healthCheckPath: /
     autoDeploy: true
-
-    envVars:
-      - key: GENERIC_TIMEZONE
-        value: Asia/Kolkata
-      - key: TZ
-        value: Asia/Kolkata
-      - key: N8N_HOST
-        value: 0.0.0.0
-      - key: N8N_PORT
-        value: 5678
-      - key: WEBHOOK_URL
-        value: https://n8n-e6ef.onrender.com           # 🔁 Update this to your real URL after deploy
-      - key: DB_TYPE
-        value: sqlite
