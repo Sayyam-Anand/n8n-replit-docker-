@@ -5,10 +5,7 @@ services:
     plan: free
     region: singapore
     autoDeploy: true
-    dockerfilePath: ./docker-compose.yml
-    buildFilter:
-      paths:
-        - docker-compose.yml
+    dockerComposeFilePath: ./docker-compose.yml     # ✅ This tells Render to use docker-compose
     healthCheckPath: /
     envVars:
       - key: GENERIC_TIMEZONE
