@@ -17,6 +17,6 @@ services:
       - key: N8N_PORT
         value: 5678
       - key: WEBHOOK_URL
-        value: https://n8n-1clp.onrender.com              # 🔁 Update this to your real URL after deploy
+        value: https://n8n-e6ef.onrender.com           # 🔁 Update this to your real URL after deploy
       - key: DB_TYPE
         value: sqlite
