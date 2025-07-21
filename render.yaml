@@ -4,6 +4,6 @@ services:
     env: docker-compose   # ✅ IMPORTANT: this is the key fix
     plan: free
     region: singapore
-    dockerComposeFilePath: ./docker-compose.yml
+    dockerComposeFilePath: docker-compose.yml
     healthCheckPath: /
     autoDeploy: true
