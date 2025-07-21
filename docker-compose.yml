@@ -9,9 +9,9 @@ services:
     environment:
       - GENERIC_TIMEZONE=Asia/Kolkata
       - TZ=Asia/Kolkata
-      - N8N_HOST=0.0.0.0              # ✅ Use 0.0.0.0 for cloud hosting
+      - N8N_HOST=0.0.0.0                # ✅ Required for cloud/public access
       - N8N_PORT=5678
-      - WEBHOOK_URL=https://n8n--<your-username>.repl.co/  # ✅ Replace with your actual Replit URL
+      - WEBHOOK_URL=https://n8n.onrender.com/  # ✅ Use your future Render domain here
       - DB_TYPE=sqlite
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=sayyam
