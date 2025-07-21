@@ -1,9 +1,9 @@
 services:
   - type: web
     name: n8n
-    env: docker
+    env: docker-compose   # ✅ IMPORTANT: this is the key fix
     plan: free
     region: singapore
-    dockerComposeFilePath: docker-compose.yml   # ✅ This tells Render to use docker-compose
+    dockerComposeFilePath: ./docker-compose.yml
     healthCheckPath: /
     autoDeploy: true
