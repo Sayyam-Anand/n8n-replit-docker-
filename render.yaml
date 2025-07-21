@@ -5,7 +5,7 @@ services:
     plan: free
     region: singapore
     autoDeploy: true
-    dockerComposeFilePath: ./docker-compose.yml     # ✅ This tells Render to use docker-compose
+    dockerComposeFilePath: ./docker-compose.yml     # ✅ Tells Render to use Docker Compose
     healthCheckPath: /
     envVars:
       - key: GENERIC_TIMEZONE
@@ -17,12 +17,6 @@ services:
       - key: N8N_PORT
         value: 5678
       - key: WEBHOOK_URL
-        value: https://n8n.onrender.com
+        value: https://n8n-1clp.onrender.com              # 🔁 Update this to your real URL after deploy
       - key: DB_TYPE
         value: sqlite
-      - key: N8N_BASIC_AUTH_ACTIVE
-        value: true
-      - key: N8N_BASIC_AUTH_USER
-        value: sayyam
-      - key: N8N_BASIC_AUTH_PASSWORD
-        value: mystrongpassword
