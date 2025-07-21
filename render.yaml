@@ -4,9 +4,10 @@ services:
     env: docker
     plan: free
     region: singapore
-    autoDeploy: true
-    dockerComposeFilePath: ./docker-compose.yml     # ✅ Tells Render to use Docker Compose
+    dockerComposeFilePath: docker-compose.yml   # ✅ This tells Render to use docker-compose
     healthCheckPath: /
+    autoDeploy: true
+
     envVars:
       - key: GENERIC_TIMEZONE
         value: Asia/Kolkata
