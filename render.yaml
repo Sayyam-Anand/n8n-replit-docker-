@@ -5,7 +5,7 @@ services:
     plan: free
     region: singapore
     autoDeploy: true
-    dockerfilePath: ""
+    dockerfilePath: ./docker-compose.yml
     buildFilter:
       paths:
         - docker-compose.yml
